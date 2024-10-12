@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "12332f08-3c0d-4d85-9743-a1e9230ffb1a",
+		"name": "web-service-gin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12623640"
+	},
+	"item": [
+		{
+			"name": "/albums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/albums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/albums/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/albums/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"albums",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/albums",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": \"4\",\r\n        \"title\": \"The Modern Sound of Betty Carter\",\r\n        \"artist\": \"Betty Carter\",\r\n        \"price\": 49.99\r\n    },\r\n    {\r\n        \"id\": \"5\",\r\n        \"title\": \"The Discovery of the Earth\",\r\n        \"artist\": \"The Author\",\r\n        \"price\": 29.99\r\n    },\r\n    {\r\n        \"id\": \"6\",\r\n        \"title\": \"The Newsest Album\",\r\n        \"artist\": \"Unknown\",\r\n        \"price\": 19.99\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/albums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"albums"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
